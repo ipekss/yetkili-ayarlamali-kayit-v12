@@ -24,7 +24,7 @@ exports.run = async (client, message, args) => {
     .addField(`Kaydı yapılan\n`, `${user.user.tag}`)
     .addField(`Kaydı yapan\n`, `${message.author.tag}`)
     .addField(`Yeni isim\n`, `[${nick}] [${yas}]`)
-    .setFooter("Upper | Kayıt Sistemi")
+    .setFooter("Kayıt Sistemi")
     .setColor("BLUE")
     message.channel.send(`${message.author} Kayıt İşlemi Başarılı!`)
     db.add(`erkekistatistik${message.author.id}.${message.guild.id}`, 1)
